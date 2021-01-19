@@ -87,7 +87,7 @@ yaw_height_hdc_initial( ...
 
 % 3d gc initial
 gc_initial( ...
-    'GC_X_DIM', 36, ...
+    'GC_X_DIM', 36, ...   
     'GC_Y_DIM', 36, ...
     'GC_Z_DIM', 36, ...
     'GC_EXCIT_X_DIM', 7, ...
@@ -116,13 +116,14 @@ exp_initial( ...
     
 % main process 
 % file path: visualDataFile, expMapHistoryFile, odoMapHistoryFile, groundTruthFile,vtHistoryFile, emHistoryFile, varargin
-imageFolderPath = 'C:\NeuroSLAM_Datasets\01_NeuroSLAM_Datasets\02_SynPanData';
+imageFolderPath = 'E:\BrainInspired\NeuroProgram\neuroSLAM\NeuroSLAM_Datasets\01_NeuroSLAM_Datasets\02_SynPanData';
 SynPerDataFile = fullfile (imageFolderPath, '');
 
-gtDataFolderPath = 'C:\NeuroSLAM_Datasets\02_NeuroSLAM_Groudtruth';
+gtDataFolderPath = 'E:\BrainInspired\NeuroProgram\neuroSLAM\NeuroSLAM_Datasets\02_NeuroSLAM_Groudtruth';
 gtDataFile = fullfile(gtDataFolderPath, '02_SynPanData_GT.txt');
 
-experiDataPath = 'C:\NeuroSLAM_Datasets\03_NeuroSLAM_Experiments_Results\SynPanData';
+experiDataPath = 'E:\BrainInspired\NeuroProgram\neuroSLAM\NeuroSLAM_Datasets\03_NeuroSLAM_Experiments_Results\SynPanData';
+% 这些数据是干什么用的，最开始是从哪里来的？
 expMapFile  = fullfile(experiDataPath, '01_exp_map_ml.txt');
 odoMapFile  = fullfile(experiDataPath, '02_odo_map_ml.txt');
 emHisFile   = fullfile(experiDataPath, '03_em_history_ml.txt');

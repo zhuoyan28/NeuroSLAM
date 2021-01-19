@@ -1,3 +1,4 @@
+
 function main(visualDataFile, groundTruthFile, expMapHistoryFile, odoMapHistoryFile, vtHistoryFile, emHistoryFile, gcTrajFile, hdcTrajFile,varargin)
 %     NeuroSLAM System Copyright (C) 2018-2019 
 %     NeuroSLAM: A Brain inspired SLAM System for 3D Environments
@@ -108,6 +109,7 @@ function main(visualDataFile, groundTruthFile, expMapHistoryFile, odoMapHistoryF
     global YAW_HEIGHT_HDC_Y_TH_SIZE;                      
     global MAX_ACTIVE_YAW_HEIGHT_HIS_PATH;
     
+    %not defined
    [curYawTheta, curHeightValue] = get_hdc_initial_value();
     
     %% 3D gridcells
@@ -217,7 +219,7 @@ function main(visualDataFile, groundTruthFile, expMapHistoryFile, odoMapHistoryF
                     elseif indFrame < KEY_POINT_SET(2)
                         [transV, yawRotV, heightV] = visual_odometry_up(curGrayImg);
                     else 
-                        [transV, yawRotV, heightV] = visual_odometry(curGrayImg);
+                        [transV, yawRotV, heightV] = visual_odometry (curGrayImg);
                     end
                     transV = 2;
                 else

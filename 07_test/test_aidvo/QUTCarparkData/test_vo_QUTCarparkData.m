@@ -47,5 +47,5 @@ visual_odo_initial( ...
     'ODO_STEP', 5);
 
 % global avg;
-visual_odo_main('C:\NeuroSLAM_Datasets\01_NeuroSLAM_Datasets\03_QUTCarparkData');
+visual_odo_main('E:\BrainInspired\NeuroProgram\neuroSLAM\NeuroSLAM_Datasets\01_NeuroSLAM_Datasets\03_QUTCarparkData');
 
